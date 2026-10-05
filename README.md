@@ -87,9 +87,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sproterupo2025/sproterupo2025/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sproterupo2025/sproterupo2025/output/github-contribution-grid-snake.svg" />
-    <img width="880" height="192" alt="Pablo's GitHub contribution snake animation" src="https://raw.githubusercontent.com/sproterupo2025/sproterupo2025/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
+    <img width="880" height="192" alt="Pablo's GitHub contribution snake animation" src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 
