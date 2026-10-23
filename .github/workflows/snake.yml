@@ -35,7 +35,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const result = await github.graphql(`query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { contributionCount contributionLevel date weekday } } } } } }`, {login: context.repo.owner});
+            const result = await github.graphql(`query($login: String!) { user(login: $login) { repositories(first:100,ownerAffiliations:OWNER,privacy:PUBLIC) { nodes { languages(first:10,orderBy:{field:SIZE,direction:DESC}) { edges { size node { name color } } } } } contributionsCollection { totalCommitContributions totalPullRequestContributions totalPullRequestReviewContributions totalIssueContributions contributionCalendar { totalContributions weeks { contributionDays { contributionCount contributionLevel date weekday } } } } } }`, {login: context.repo.owner});
+            const entries=result.user.repositories.nodes.flatMap(r=>r.languages.edges);
+            const languageTotals=new Map();
+            for(const e of entries){const old=languageTotals.get(e.node.name)||{name:e.node.name,color:e.node.color||'#79c0ff',size:0};old.size+=e.size;languageTotals.set(old.name,old);}
+            const languages=[...languageTotals.values()].sort((a,b)=>b.size-a.size).slice(0,5);
+            const sum=languages.reduce((s,l)=>s+l.size,0);
             const calendar = result.user.contributionsCollection.contributionCalendar;
             const fs = require('fs');
             fs.mkdirSync('dist', {recursive:true});
@@ -81,6 +86,21 @@ jobs:
                 city+=`<polygon points="${x},${y-h} ${x+17},${y-10-h} ${x+29},${y-7-h} ${x+12},${y+3-h}" fill="${colors[level]}" stroke="${bg}" stroke-width="0.7"><title>${d.date}: ${d.contributionCount} contributions</title></polygon>`;
               }));
               city+=`<text x="24" y="398" fill="${muted}" font-size="11">One block per day. Height uses a logarithmic scale of contribution count.</text><text x="24" y="417" fill="${muted}" font-size="10">Real activity · Updated ${new Date().toISOString().slice(0,10)} UTC</text></g></svg>`;
+              city=city.replace('height="430" viewBox="0 0 920 430"','height="710" viewBox="0 0 920 710"').replace('<rect width="920" height="430"','<rect width="920" height="710"');
+              let panel=`<line x1="24" y1="440" x2="896" y2="440" stroke="${border}"/><text x="24" y="475" fill="${fg}" font-size="17" font-weight="600">Languages</text><text x="24" y="496" fill="${muted}" font-size="10">Public repository bytes · includes forks</text>`;
+              const circumference=2*Math.PI*64;
+              panel+=`<circle cx="108" cy="593" r="64" fill="none" stroke="${panel === '' ? bg : border}" stroke-width="24"/>`;
+              let offset=0;
+              languages.forEach((l,i)=>{const pct=l.size/sum,len=pct*circumference;
+                panel+=`<circle cx="108" cy="593" r="64" fill="none" stroke="${l.color}" stroke-width="24" stroke-dasharray="${len} ${circumference-len}" stroke-dashoffset="${-offset}" transform="rotate(-90 108 593)"/><rect x="210" y="${536+i*28}" width="11" height="11" rx="3" fill="${l.color}"/><text x="232" y="${546+i*28}" fill="${fg}" font-size="12">${l.name} · ${(pct*100).toFixed(1)}%</text>`;offset+=len;});
+              if(!sum)panel+=`<text x="24" y="548" fill="${muted}" font-size="12">No public language data available</text>`;
+              panel+=`<line x1="440" y1="466" x2="440" y2="684" stroke="${border}"/><text x="475" y="475" fill="${fg}" font-size="17" font-weight="600">Activity breakdown</text><text x="475" y="496" fill="${muted}" font-size="10">Last 12 months · activity visible to GitHub Actions</text>`;
+              const cc=result.user.contributionsCollection;
+              const breakdown=[['Commits',cc.totalCommitContributions],['Pull requests',cc.totalPullRequestContributions],['Reviews',cc.totalPullRequestReviewContributions],['Issues',cc.totalIssueContributions]];
+              const max=Math.max(1,...breakdown.map(x=>x[1]));
+              breakdown.forEach(([label,value],i)=>{const y=531+i*42;panel+=`<text x="475" y="${y}" fill="${fg}" font-size="12">${label}</text><text x="872" y="${y}" text-anchor="end" fill="${accent}" font-size="13" font-weight="600">${value}</text><rect x="475" y="${y+8}" width="397" height="6" rx="3" fill="${border}"/>`;if(value)panel+=`<rect x="475" y="${y+8}" width="${397*value/max}" height="6" rx="3" fill="${accent}"/>`;});
+              city=city.replace('</g></svg>',panel+'</g></svg>');
+
               fs.writeFileSync(`dist/contributions-3d-${dark?'dark':'light'}.svg`,city);
             }
 
