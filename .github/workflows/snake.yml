@@ -75,7 +75,7 @@ jobs:
             }
 
       - name: Generate contribution space shooter
-        uses: czl9707/gh-space-shooter@96d45ed9a790300da731b9fc49b95d697f528464
+        uses: czl9707/gh-space-shooter@b24c9792454d1a2e0139ccf72840424e1f83c3f2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           output-path: dist/space-shooter.gif
