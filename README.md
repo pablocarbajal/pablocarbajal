@@ -19,6 +19,7 @@
 <td width="33%" valign="top"><strong>Teaching & continuous learning</strong><br/><br/>Private tutor in mathematics, programming and piano. Turning difficult ideas into clear, useful solutions.</td>
 </tr>
 </table>
+
 ## 🛠️ Technologies & Knowledge
 
 My toolkit across application development, algorithms and data. Detailed foundations are available below.
@@ -105,6 +106,12 @@ My toolkit across application development, algorithms and data. Detailed foundat
 ## Contribution landscape
 
 A view of my development activity and language distribution across public and private repositories.
+| Owned repositories | Detected languages | Scope |
+| :---: | :---: | :---: |
+| **35** | **21** | Public + private · excludes forks |
+
+<sub>Repository and language snapshot: October 23, 2026. Contribution charts refresh automatically.</sub>
+
 
 <p align="center">
   <picture>
