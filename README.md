@@ -27,6 +27,34 @@
 </tr>
 </table>
 
+## 📊 Contributions
+
+<p align="center">
+  <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
+    <img src="https://ghchart.rshah.org/26a641/pablocarbajal" alt="Pablo's GitHub contributions over the last year" width="100%" />
+  </a>
+</p>
+
+## 🐍 GitHub Activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
+    <img width="880" height="192" alt="Pablo's GitHub contribution snake animation" src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+
+## 📂 Repositories
+
+| Repository | Description |
+| --- | --- |
+| [curso-python](https://github.com/pablocarbajal/curso-python) | Python course with examples and exercises. Forked from midudev/curso-python. |
+| [pablocarbajal](https://github.com/pablocarbajal/pablocarbajal) | Profile README and GitHub resources. |
+
+[View all public repositories →](https://github.com/pablocarbajal?tab=repositories)
+
 ## 🛠️ Technologies & Knowledge
 
 ### 💻 Languages
@@ -92,17 +120,6 @@
 - **Algorithms & data structures:** lists, trees, graphs, heaps, hashing, UFDS, Trie, Segment Tree, AVL and Red-Black Trees.
 - **Graph algorithms & paradigms:** Dijkstra, Bellman-Ford, Floyd-Warshall, Kruskal, Prim, Ford-Fulkerson, Dinic, dynamic programming, backtracking, greedy, divide & conquer, recursion and Big-O analysis.
 - **Technical exploration:** SFML, raylib, SDL2, Leaflet, geometry, combinatorics, number theory, mathematical logic and ML fundamentals.
-
-## 🐍 GitHub Activity
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
-    <img width="880" height="192" alt="Pablo's GitHub contribution snake animation" src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
 
 ---
 
