@@ -44,7 +44,7 @@
 
 <p align="center">
   <a href="https://github.com/czl9707/gh-space-shooter">
-    <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
+    <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/space-shooter.gif?v=1" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
   </a>
 </p>
 
