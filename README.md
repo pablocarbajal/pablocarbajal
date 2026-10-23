@@ -31,7 +31,11 @@
 
 <p align="center">
   <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
-    <img src="https://ghchart.rshah.org/26a641/pablocarbajal" alt="Pablo's GitHub contributions over the last year" width="100%" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions.svg" />
+      <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" alt="Pablo's GitHub contributions over the last year" width="920" />
+    </picture>
   </a>
 </p>
 
