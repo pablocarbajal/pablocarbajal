@@ -20,26 +20,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generate snake animation
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#0969da&color_dots=#ebedf0,#d0e7fa,#90c8ed,#409bd3,#0969a8
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#79c0ff&color_dots=#1b2330,#153858,#1f6397,#3196d2,#79d6f2
-
-      - name: Allow calendar assets in generated directory
-        run: sudo chown -R "$(id -u):$(id -g)" dist
-
       - name: Generate contribution calendar
         uses: actions/github-script@v7
         with:
           script: |
             const result = await github.graphql(`query($login: String!) { user(login: $login) { repositories(first:100,ownerAffiliations:OWNER,privacy:PUBLIC) { nodes { languages(first:10,orderBy:{field:SIZE,direction:DESC}) { edges { size node { name color } } } } } contributionsCollection { totalCommitContributions totalPullRequestContributions totalPullRequestReviewContributions totalIssueContributions totalRepositoryContributions contributionCalendar { totalContributions weeks { contributionDays { contributionCount contributionLevel date weekday } } } } } }`, {login: context.repo.owner});
-            const entries=result.user.repositories.nodes.flatMap(r=>r.languages.edges);
-            const languageTotals=new Map();
-            for(const e of entries){const old=languageTotals.get(e.node.name)||{name:e.node.name,color:e.node.color||'#79c0ff',size:0};old.size+=e.size;languageTotals.set(old.name,old);}
-            const languages=[...languageTotals.values()].sort((a,b)=>b.size-a.size).slice(0,5);
+            const languageFile=await github.rest.repos.getContent({owner:context.repo.owner,repo:context.repo.repo,path:'metrics/languages.json',ref:'main'});
+            const languageSnapshot=JSON.parse(Buffer.from(languageFile.data.content,'base64').toString('utf8'));
+            const allLanguages=languageSnapshot.languages;
+            const languages=allLanguages.slice(0,5);
+            if(allLanguages.length>5)languages.push({name:'Other ('+(allLanguages.length-5)+' languages)',color:'#b694ff',size:allLanguages.slice(5).reduce((s,l)=>s+l.size,0)});
             const sum=languages.reduce((s,l)=>s+l.size,0);
             const calendar = result.user.contributionsCollection.contributionCalendar;
             const fs = require('fs');
@@ -99,13 +89,13 @@ jobs:
               for(let ring=1;ring<=4;ring++)city+=`<polygon points="${metrics.map((_,i)=>point(i,radius*ring/4).join(',')).join(' ')}" fill="none" stroke="${border}" stroke-dasharray="3 4"/>`;
               metrics.forEach(([label,value],i)=>{const p=point(i,radius),t=point(i,radius+28);city+=`<line x1="${cx}" y1="${cy}" x2="${p[0]}" y2="${p[1]}" stroke="${border}"/><text x="${t[0]}" y="${t[1]}" text-anchor="middle" fill="${fg}" font-size="10">${label}<tspan x="${t[0]}" dy="14" fill="${muted}">${value}</tspan></text>`;});
               const maxMetric=Math.max(1,...metrics.map(m=>m[1]));
-              city+=`<polygon points="${metrics.map((m,i)=>point(i,radius*Math.log1p(m[1])/Math.log1p(maxMetric)).join(',')).join(' ')}" fill="#56d364" fill-opacity="0.35" stroke="#7ee787" stroke-width="2"/><text x="650" y="486" fill="${muted}" font-size="9">Last year · logarithmic axes</text>`;
+              city+=`<polygon points="${metrics.map((m,i)=>point(i,radius*Math.log1p(m[1])/Math.log1p(maxMetric)).join(',')).join(' ')}" fill="#56d364" fill-opacity="0.35" stroke="#7ee787" stroke-width="2"/><text x="650" y="486" fill="${muted}" font-size="9">Visible activity · log axes</text>`;
               city+=`<text x="24" y="350" fill="${fg}" font-size="14" font-weight="600">Languages</text>`;
               const circumference=2*Math.PI*61;
               city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${border}" stroke-width="23"/>`;
               let offset=0;
               languages.forEach((l,i)=>{const pct=l.size/sum,len=pct*circumference;city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${l.color}" stroke-width="23" stroke-dasharray="${len} ${circumference-len}" stroke-dashoffset="${-offset}" transform="rotate(-90 104 435)"/><rect x="195" y="${388+i*25}" width="10" height="10" rx="2" fill="${l.color}"/><text x="215" y="${398+i*25}" fill="${fg}" font-size="11">${esc(l.name)} · ${(pct*100).toFixed(1)}%</text>`;offset+=len;});
-              city+=`<text x="24" y="528" fill="${muted}" font-size="10">Languages: public repository bytes, including forks. Radar: activity visible to GitHub Actions.</text><text x="24" y="549" fill="${muted}" font-size="10">Block color follows the time of year; height follows actual daily activity on a logarithmic scale.</text><text x="24" y="572" fill="${muted}" font-size="10">Updated ${new Date().toISOString().slice(0,10)} UTC · Refreshes every 6 hours</text></g></svg>`;
+              city+=`<text x="24" y="528" fill="${muted}" font-size="10">Languages: owned repositories, including private; excludes forks. Snapshot ${languageSnapshot.measuredAt}.</text><text x="24" y="549" fill="${muted}" font-size="10">Block color follows the time of year; height follows actual daily activity on a logarithmic scale.</text><text x="24" y="572" fill="${muted}" font-size="10">Updated ${new Date().toISOString().slice(0,10)} UTC · Refreshes every 6 hours</text></g></svg>`;
               fs.writeFileSync(`dist/contributions-3d-${dark?'dark':'light'}.svg`,city);
               }
             }
