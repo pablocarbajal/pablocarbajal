@@ -85,16 +85,16 @@
 ### 🌐 Web Development & Frameworks
 
 <p>
-  <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img alt="Windows Forms" src="https://img.shields.io/badge/Windows%20Forms-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/dotnet.svg" width="52" height="52" alt=".NET" title=".NET" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/windows-forms.svg" width="52" height="52" alt="Windows Forms" title="Windows Forms" />
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/angular.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/angular.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/angular.svg" width="52" height="52" alt="Angular" title="Angular" /></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/react.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/react.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/react.svg" width="52" height="52" alt="React" title="React" /></picture>
-  <img alt="Astro" src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" />
-  <img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/astro.svg" width="52" height="52" alt="Astro" title="Astro" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/spring-boot.svg" width="52" height="52" alt="Spring Boot" title="Spring Boot" />
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/flask.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/flask.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/flask.svg" width="52" height="52" alt="Flask" title="Flask" /></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/html.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/html.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/html.svg" width="52" height="52" alt="HTML5" title="HTML5" /></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/css.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/css.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/css.svg" width="52" height="52" alt="CSS3" title="CSS3" /></picture>
-  <img alt="PWA" src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/pwa.svg" width="52" height="52" alt="PWA" title="PWA" />
 </p>
 
 ### 🗄️ Data & Machine Learning
@@ -110,7 +110,7 @@
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/claude.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" width="52" height="52" alt="Claude" title="Claude" /></picture>
-  <img alt="OpenAI Codex" src="https://img.shields.io/badge/OpenAI%20Codex-412991?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/codex.svg" width="52" height="52" alt="OpenAI Codex" title="OpenAI Codex" />
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/copilot.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" width="52" height="52" alt="GitHub Copilot" title="GitHub Copilot" /></picture>
 </p>
 
