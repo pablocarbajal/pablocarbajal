@@ -1,24 +1,17 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100%" alt="Animated development workspace connecting code, devices and creative tools" />
-</p>
+<h1 align="center">Hi, I'm Pablo Carbajal 👋</h1>
+<p align="center"><strong>Information Systems Engineering · Software Development · Teaching</strong></p>
 
-<h1 align="center">Pablo Carbajal</h1>
-<p align="center"><strong>Information Systems Engineering student · Software builder · Tutor</strong></p>
-<p align="center">Building web applications, desktop software and algorithm-driven tools.<br/>Combining competitive mathematics with hands-on development in C++, Python and the web ecosystem.</p>
+## 👨‍💻 About Me
 
-<p align="center">
-  <a href="#%EF%B8%8F-technologies--knowledge">Technologies</a> ·
-  <a href="#contribution-landscape">Development overview</a> ·
-  <a href="#contributions">Contributions</a>
-</p>
-
-<table>
-<tr>
-<td width="33%" valign="top"><strong>Web & applications</strong><br/><br/>Developing with modern web frameworks, REST APIs and desktop interfaces.</td>
-<td width="33%" valign="top"><strong>Algorithms & problem solving</strong><br/><br/>Building console games, language interpreters and algorithm visualizers in C++ and Python.</td>
-<td width="33%" valign="top"><strong>Teaching & continuous learning</strong><br/><br/>Private tutor in mathematics, programming and piano. Turning difficult ideas into clear, useful solutions.</td>
-</tr>
-</table>
+- 🎓 **Information Systems Engineering student**, building a strong foundation in software development and problem solving.
+- 🛠️ I build **web applications, desktop software and algorithm-driven tools**.
+- 💻 I work with **C++, C#, Python, Java, TypeScript and JavaScript**.
+- 🧠 My interests include **competitive mathematics, data structures and algorithms**.
+- 🎮 My personal projects include **console games, language interpreters and algorithm visualizers**.
+- 🌐 I'm exploring **modern web frameworks, REST APIs and application architecture**.
+- 👨‍🏫 I'm a private tutor in **mathematics, programming and piano**.
+- 🤖 I use **Claude, OpenAI Codex and GitHub Copilot** as development tools.
+- 🚀 I enjoy **learning continuously and turning difficult ideas into useful software**.
 
 ## 🛠️ Technologies & Knowledge
 
@@ -158,4 +151,4 @@ Recent activity, followed by a space-shooter visualization generated from the sa
 <p align="center"><strong>Building, learning and sharing knowledge.</strong><br/><sub>Thanks for visiting.</sub></p>
 
 
-<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Devicon](https://github.com/devicons/devicon) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
+<sub>Visuals: [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Devicon](https://github.com/devicons/devicon) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
