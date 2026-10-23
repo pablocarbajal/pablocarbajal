@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100%" alt="Animated development workspace with connected devices" />
+</p>
 <h1 align="center">
   Hi, I'm Pablo Carbajal! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" alt="Waving hand" />
 </h1>
@@ -39,6 +42,11 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/czl9707/gh-space-shooter">
+    <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
+  </a>
+</p>
 ## GitHub Activity
 
 <p align="center">
@@ -55,12 +63,12 @@
 ### 💻 Languages
 
 <p>
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/cpp.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/cpp.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/cpp.svg" width="52" height="52" alt="C++" title="C++" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/csharp.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/csharp.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/csharp.svg" width="52" height="52" alt="C#" title="C#" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/python.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/python.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/python.svg" width="52" height="52" alt="Python" title="Python" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/java.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/java.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/java.svg" width="52" height="52" alt="Java" title="Java" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/typescript.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/typescript.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/typescript.svg" width="52" height="52" alt="TypeScript" title="TypeScript" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/js.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/js.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/js.svg" width="52" height="52" alt="JavaScript" title="JavaScript" /></picture>
 </p>
 
 ### 🌐 Web Development & Frameworks
@@ -68,42 +76,42 @@
 <p>
   <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
   <img alt="Windows Forms" src="https://img.shields.io/badge/Windows%20Forms-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
-  <img alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/angular.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/angular.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/angular.svg" width="52" height="52" alt="Angular" title="Angular" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/react.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/react.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/react.svg" width="52" height="52" alt="React" title="React" /></picture>
   <img alt="Astro" src="https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white" />
   <img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/flask.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/flask.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/flask.svg" width="52" height="52" alt="Flask" title="Flask" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/html.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/html.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/html.svg" width="52" height="52" alt="HTML5" title="HTML5" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/css.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/css.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/css.svg" width="52" height="52" alt="CSS3" title="CSS3" /></picture>
   <img alt="PWA" src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
 </p>
 
 ### 🗄️ Data & Machine Learning
 
 <p>
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img alt="Pandas" src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img alt="Scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/postgresql.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/postgresql.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/postgresql.svg" width="52" height="52" alt="PostgreSQL" title="PostgreSQL" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/pandas.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/pandas.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/pandas.svg" width="52" height="52" alt="Pandas" title="Pandas" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/tensorflow.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/tensorflow.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/tensorflow.svg" width="52" height="52" alt="TensorFlow" title="TensorFlow" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/scikit-learn.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/scikit-learn.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/scikit-learn.svg" width="52" height="52" alt="Scikit-learn" title="Scikit-learn" /></picture>
 </p>
 
 ### 🤖 AI as a Work Tool
 
 <p>
-  <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/claude.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" width="52" height="52" alt="Claude" title="Claude" /></picture>
   <img alt="OpenAI Codex" src="https://img.shields.io/badge/OpenAI%20Codex-412991?style=for-the-badge&logo=openai&logoColor=white" />
-  <img alt="GitHub Copilot" src="https://img.shields.io/badge/GitHub%20Copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/copilot.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" width="52" height="52" alt="GitHub Copilot" title="GitHub Copilot" /></picture>
 </p>
 
 ### 🧰 Tools & Environment
 
 <p>
-  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img alt="AWS" src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/git.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/git.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/git.svg" width="52" height="52" alt="Git" title="Git" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/github.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/github.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/github.svg" width="52" height="52" alt="GitHub" title="GitHub" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/docker.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/docker.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/docker.svg" width="52" height="52" alt="Docker" title="Docker" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/aws.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/aws.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/aws.svg" width="52" height="52" alt="AWS" title="AWS" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/vscode.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/vscode.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/vscode.svg" width="52" height="52" alt="Visual Studio Code" title="Visual Studio Code" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/intellij.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/intellij.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/intellij.svg" width="52" height="52" alt="IntelliJ IDEA" title="IntelliJ IDEA" /></picture>
 </p>
 
 <details>
@@ -123,3 +131,6 @@
 ---
 
 <p align="center">Thanks for visiting my profile 🙌</p>
+
+
+<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Space Shooter](https://github.com/czl9707/gh-space-shooter) · [Snake](https://github.com/Platane/snk)</sub>
