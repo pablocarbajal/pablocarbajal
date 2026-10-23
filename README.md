@@ -47,6 +47,7 @@
     <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
   </a>
 </p>
+
 ## GitHub Activity
 
 <p align="center">
