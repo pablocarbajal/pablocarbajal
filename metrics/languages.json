@@ -1,0 +1,111 @@
+{
+  "scope": "Owned repositories, including private; excludes forks",
+  "measuredAt": "2026-10-23",
+  "languages": [
+    {
+      "color": "#f1e05a",
+      "size": 3001479,
+      "name": "JavaScript"
+    },
+    {
+      "color": "#e34c26",
+      "size": 882705,
+      "name": "HTML"
+    },
+    {
+      "color": "#3178c6",
+      "size": 594777,
+      "name": "TypeScript"
+    },
+    {
+      "color": "#ff5a03",
+      "size": 467150,
+      "name": "Astro"
+    },
+    {
+      "color": "#663399",
+      "size": 285906,
+      "name": "CSS"
+    },
+    {
+      "color": "#3572A5",
+      "size": 274972,
+      "name": "Python"
+    },
+    {
+      "color": "#fcb32c",
+      "size": 188026,
+      "name": "MDX"
+    },
+    {
+      "color": "#00B4AB",
+      "size": 128607,
+      "name": "Dart"
+    },
+    {
+      "color": "#f34b7d",
+      "size": 101072,
+      "name": "C++"
+    },
+    {
+      "color": "#7355dd",
+      "size": 86018,
+      "name": "C#"
+    },
+    {
+      "color": "#b07219",
+      "size": 40574,
+      "name": "Java"
+    },
+    {
+      "color": "#012456",
+      "size": 28649,
+      "name": "PowerShell"
+    },
+    {
+      "color": "#A97BFF",
+      "size": 7177,
+      "name": "Kotlin"
+    },
+    {
+      "color": "#C1F12E",
+      "size": 3918,
+      "name": "Batchfile"
+    },
+    {
+      "color": "#89e051",
+      "size": 3904,
+      "name": "Shell"
+    },
+    {
+      "color": "#DA5B0B",
+      "size": 2395,
+      "name": "Jupyter Notebook"
+    },
+    {
+      "color": "#264b99",
+      "size": 2181,
+      "name": "Inno Setup"
+    },
+    {
+      "color": "#384d54",
+      "size": 118,
+      "name": "Dockerfile"
+    },
+    {
+      "color": "#DA3434",
+      "size": 106,
+      "name": "CMake"
+    },
+    {
+      "color": "#ff3670",
+      "size": 69,
+      "name": "Mermaid"
+    },
+    {
+      "color": "#6E4C13",
+      "size": 64,
+      "name": "Assembly"
+    }
+  ]
+}
