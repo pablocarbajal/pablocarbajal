@@ -1,8 +1,8 @@
-name: Generate contribution snake
+name: Refresh profile activity
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -11,18 +11,22 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-activity
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Generate snake animation
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#4c9aff&color_dots=#ebedf0,#c6e48b,#7bc96f,#239a3b,#196127
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#8b949e&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+            dist/github-contribution-grid-snake.svg?color_snake=#0969da&color_dots=#ebedf0,#d0e7fa,#90c8ed,#409bd3,#0969a8
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#79c0ff&color_dots=#1b2330,#153858,#1f6397,#3196d2,#79d6f2
 
       - name: Allow calendar assets in generated directory
         run: sudo chown -R "$(id -u):$(id -g)" dist
@@ -31,32 +35,43 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const result = await github.graphql(`query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { contributionCount date weekday } } } } } }`, { login: context.repo.owner });
+            const result = await github.graphql(`query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { contributionCount contributionLevel date weekday } } } } } }`, {login: context.repo.owner});
             const calendar = result.user.contributionsCollection.contributionCalendar;
             const fs = require('fs');
-            fs.mkdirSync('dist', { recursive: true });
-            for (const dark of [true, false]) {
+            fs.mkdirSync('dist', {recursive:true});
+            const days = calendar.weeks.flatMap(w => w.contributionDays);
+            const active = days.filter(d => d.contributionCount > 0).length;
+            const recent = days.slice(-30).reduce((s,d) => s+d.contributionCount,0);
+            const best = Math.max(0,...days.map(d => d.contributionCount));
+            const levels = ['NONE','FIRST_QUARTILE','SECOND_QUARTILE','THIRD_QUARTILE','FOURTH_QUARTILE'];
+            for (const dark of [true,false]) {
               const bg = dark ? '#0d1117' : '#ffffff';
-              const fg = dark ? '#c9d1d9' : '#24292f';
-              const muted = dark ? '#8b949e' : '#57606a';
-              const colors = dark ? ['#161b22', '#214568', '#4763b5', '#8b6cdb', '#49c9b0'] : ['#ebedf0', '#bed8ef', '#8ba7e0', '#ae8be2', '#279d89'];
-              const peak = Math.max(1, ...calendar.weeks.flatMap(w => w.contributionDays.map(d => d.contributionCount)));
-              const width = 920;
-              let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="220" viewBox="0 0 ${width} 220" role="img" aria-label="GitHub contribution calendar"><rect width="100%" height="100%" fill="${bg}"/><g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif"><text x="20" y="28" fill="${fg}" font-size="16" font-weight="600">${calendar.totalContributions.toLocaleString('en-US')} contributions in the last year</text>`;
-              let lastMonth = '';
-              calendar.weeks.forEach((week, i) => {
-                const month = new Date(week.contributionDays[0].date + 'T00:00:00Z').toLocaleString('en-US', {month:'short', timeZone:'UTC'});
-                if (month !== lastMonth && i < calendar.weeks.length - 1) { svg += `<text x="${50 + i * 16}" y="54" fill="${muted}" font-size="10">${month}</text>`; lastMonth = month; }
+              const panel = dark ? '#161b22' : '#f6f8fa';
+              const border = dark ? '#30363d' : '#d0d7de';
+              const fg = dark ? '#e6edf3' : '#1f2328';
+              const muted = dark ? '#8b949e' : '#656d76';
+              const accent = dark ? '#79c0ff' : '#0969da';
+              const colors = dark ? ['#1b2330','#153858','#1f6397','#3196d2','#79d6f2'] : ['#ebedf0','#d0e7fa','#90c8ed','#409bd3','#0969a8'];
+              let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-label="Contribution overview: ${calendar.totalContributions} contributions in the last year"><rect width="920" height="320" rx="12" fill="${bg}"/><g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">`;
+              const metrics = [[calendar.totalContributions,'CONTRIBUTIONS · LAST YEAR'],[recent,'CONTRIBUTIONS · LAST 30 DAYS'],[active,'ACTIVE DAYS · LAST YEAR'],[best,'MOST CONTRIBUTIONS IN A DAY']];
+              metrics.forEach(([value,label],i) => {
+                const x=16+i*224;
+                svg += `<rect x="${x}" y="12" width="216" height="90" rx="8" fill="${panel}" stroke="${border}"/><text x="${x+16}" y="52" fill="${accent}" font-size="30" font-weight="650">${value.toLocaleString('en-US')}</text><text x="${x+16}" y="78" fill="${muted}" font-size="9" letter-spacing="0.3">${label}</text>`;
+              });
+              let lastMonth='';
+              calendar.weeks.forEach((week,i) => {
+                const month=new Date(week.contributionDays[0].date+'T00:00:00Z').toLocaleString('en-US',{month:'short',timeZone:'UTC'});
+                if(month!==lastMonth && i<calendar.weeks.length-1){svg+=`<text x="${50+i*16}" y="132" fill="${muted}" font-size="10">${month}</text>`;lastMonth=month;}
                 week.contributionDays.forEach(d => {
-                  const level = d.contributionCount === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil(4 * Math.sqrt(d.contributionCount / peak))));
-                  svg += `<rect x="${50+i*16}" y="${66+d.weekday*16}" width="12" height="12" rx="3" fill="${colors[level]}"><title>${d.date}: ${d.contributionCount} contributions</title></rect>`;
+                  const level=Math.max(0,levels.indexOf(d.contributionLevel));
+                  svg+=`<rect x="${50+i*16}" y="${146+d.weekday*16}" width="12" height="12" rx="3" fill="${colors[level]}"><title>${d.date}: ${d.contributionCount} contributions</title></rect>`;
                 });
               });
-              for (const [label, day] of [['Mon',1],['Wed',3],['Fri',5]]) svg += `<text x="16" y="${75+day*16}" fill="${muted}" font-size="10">${label}</text>`;
-              svg += `<text x="715" y="204" fill="${muted}" font-size="10">Less</text>`;
-              colors.forEach((color,i) => svg += `<rect x="${746+i*16}" y="194" width="12" height="12" rx="3" fill="${color}"/>`);
-              svg += `<text x="834" y="204" fill="${muted}" font-size="10">More</text></g></svg>`;
-              fs.writeFileSync(`dist/contributions${dark ? '-dark' : ''}.svg`, svg);
+              for(const [label,day] of [['Mon',1],['Wed',3],['Fri',5]])svg+=`<text x="16" y="${155+day*16}" fill="${muted}" font-size="10">${label}</text>`;
+              svg+=`<text x="16" y="289" fill="${muted}" font-size="10">Last 12 months · Updated ${new Date().toISOString().slice(0,10)} UTC</text><text x="715" y="289" fill="${muted}" font-size="10">Less</text>`;
+              colors.forEach((color,i)=>svg+=`<rect x="${746+i*16}" y="279" width="12" height="12" rx="3" fill="${color}"/>`);
+              svg+=`<text x="834" y="289" fill="${muted}" font-size="10">More</text></g></svg>`;
+              fs.writeFileSync(`dist/contributions${dark?'-dark':''}.svg`,svg);
             }
 
       - name: Publish animation to the output branch
