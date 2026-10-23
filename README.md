@@ -134,21 +134,3 @@ Recent activity, followed by a space-shooter visualization generated from the sa
     <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
   </a>
 </p>
-
-
-<details>
-<summary><strong>About these statistics</strong></summary>
-
-- **Contributions and activity:** refreshed automatically every six hours. GitHub determines which contributions are counted; radar values depend on what the workflow can access.
-- **Languages:** an aggregate measurement of 35 owned repositories, including 34 private repositories and excluding forks, taken on **October 23, 2026**. This measurement covers 21 detected languages. Private repository names and source code are not published.
-- **Language percentages describe code volume, not proficiency.** This snapshot is separate from the automatic contribution refresh.
-- **3D landscape:** each block represents a day. Height uses a logarithmic scale of real contributions; colors follow the time of year.
-
-</details>
-
----
-
-<p align="center"><strong>Building, learning and sharing knowledge.</strong><br/><sub>Thanks for visiting.</sub></p>
-
-
-<sub>Visuals: [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Devicon](https://github.com/devicons/devicon) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
