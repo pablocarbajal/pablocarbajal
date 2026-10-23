@@ -30,45 +30,6 @@
 </tr>
 </table>
 
-## Contributions
-
-<p align="center">
-  <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions.svg" />
-      <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" alt="Pablo's GitHub contributions over the last year" width="920" />
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/czl9707/gh-space-shooter">
-    <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
-  </a>
-</p>
-
-### Contribution landscape
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-light.svg" />
-    <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" width="920" alt="Pablo's real GitHub contributions in a 3D landscape" />
-  </picture>
-</p>
-
-## GitHub Activity
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
-    <img width="920" alt="Pablo's GitHub contribution snake animation" src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
-
 ## 🛠️ Technologies & Knowledge
 
 ### 💻 Languages
@@ -139,9 +100,40 @@
 
 </details>
 
+
+## Contribution landscape
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-light.svg" />
+    <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" width="920" alt="Pablo's real GitHub contributions in a 3D landscape" />
+  </picture>
+</p>
+
+
+## Contributions
+
+<p align="center">
+  <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions.svg" />
+      <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" alt="Pablo's GitHub contributions over the last year" width="920" />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/czl9707/gh-space-shooter">
+    <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/space-shooter.gif" width="920" alt="Space shooter animation generated from Pablo's GitHub contributions" />
+  </a>
+</p>
+
+
 ---
 
 <p align="center">Thanks for visiting my profile 🙌</p>
 
 
-<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Space Shooter](https://github.com/czl9707/gh-space-shooter) · [Snake](https://github.com/Platane/snk)</sub>
+<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
