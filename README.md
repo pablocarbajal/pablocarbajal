@@ -122,9 +122,9 @@ Recent activity, followed by a space-shooter visualization generated from the sa
 <p align="center">
   <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions.svg" />
-      <img src="https://raw.githubusercontent.com/pablocarbajal/pablocarbajal/output/contributions-dark.svg" alt="Pablo's GitHub contributions over the last year" width="920" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-colorful-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-colorful.svg" />
+      <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-colorful-dark.svg" alt="Pablo's GitHub contributions over the last year" width="920" />
     </picture>
   </a>
 </p>
