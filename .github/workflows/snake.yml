@@ -49,9 +49,11 @@ jobs:
               const colors = dark ? ['#1b2330','#153858','#1f6397','#3196d2','#79d6f2'] : ['#ebedf0','#d0e7fa','#90c8ed','#409bd3','#0969a8'];
               let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-label="Contribution overview: ${calendar.totalContributions} contributions in the last year"><rect width="920" height="320" rx="12" fill="${bg}"/><g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">`;
               const metrics = [[calendar.totalContributions,'CONTRIBUTIONS · LAST YEAR'],[recent,'CONTRIBUTIONS · LAST 30 DAYS'],[active,'ACTIVE DAYS · LAST YEAR'],[best,'MOST CONTRIBUTIONS IN A DAY']];
+              const cardColors=dark?['#79c0ff','#d2a8ff','#56d4a3','#ffbd69']:['#0969da','#8250df','#16865b','#bc5900'];
+              const cardFills=dark?['#101e30','#20172e','#10271f','#2b2115']:['#eef6ff','#f6f0ff','#effaf4','#fff7eb'];
               metrics.forEach(([value,label],i) => {
-                const x=16+i*224;
-                svg += `<rect x="${x}" y="12" width="216" height="90" rx="8" fill="${panel}" stroke="${border}"/><text x="${x+16}" y="52" fill="${accent}" font-size="30" font-weight="650">${value.toLocaleString('en-US')}</text><text x="${x+16}" y="78" fill="${muted}" font-size="9" letter-spacing="0.3">${label}</text>`;
+                const x=16+i*224,color=cardColors[i];
+                svg += `<rect x="${x}" y="12" width="216" height="90" rx="12" fill="${cardFills[i]}" stroke="${color}" stroke-opacity="0.4"/><rect x="${x+16}" y="26" width="24" height="3" rx="1.5" fill="${color}"/><text x="${x+16}" y="61" fill="${color}" font-size="32" font-weight="700">${value.toLocaleString('en-US')}</text><text x="${x+16}" y="83" fill="${muted}" font-size="9" letter-spacing="0.3">${label}</text>`;
               });
               let lastMonth='';
               calendar.weeks.forEach((week,i) => {
