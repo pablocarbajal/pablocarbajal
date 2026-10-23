@@ -99,12 +99,6 @@ My toolkit across application development, algorithms and data. Detailed foundat
 ## Contribution landscape
 
 A view of my development activity and language distribution across public and private repositories.
-| Owned repositories | Detected languages | Scope |
-| :---: | :---: | :---: |
-| **35** | **21** | Public + private · excludes forks |
-
-<sub>Repository and language snapshot: October 23, 2026. Contribution charts refresh automatically.</sub>
-
 
 <p align="center">
   <picture>
