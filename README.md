@@ -48,6 +48,16 @@
   </a>
 </p>
 
+### Contribution landscape
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-light.svg" />
+    <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" width="920" alt="Pablo's real GitHub contributions in a 3D landscape" />
+  </picture>
+</p>
+
 ## GitHub Activity
 
 <p align="center">
