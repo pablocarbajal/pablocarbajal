@@ -46,7 +46,7 @@ jobs:
               const fg = dark ? '#e6edf3' : '#1f2328';
               const muted = dark ? '#8b949e' : '#656d76';
               const accent = dark ? '#79c0ff' : '#0969da';
-              const colors = dark ? ['#1b2330','#153858','#1f6397','#3196d2','#79d6f2'] : ['#ebedf0','#d0e7fa','#90c8ed','#409bd3','#0969a8'];
+              const colors = dark ? ['#1b2330','#4da3ff','#af85ff','#40d6a0','#ffbb66'] : ['#ebedf0','#218bff','#9760df','#1a9b70','#d77b00'];
               let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="920" height="320" viewBox="0 0 920 320" role="img" aria-label="Contribution overview: ${calendar.totalContributions} contributions in the last year"><rect width="920" height="320" rx="12" fill="${bg}"/><g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">`;
               const metrics = [[calendar.totalContributions,'CONTRIBUTIONS · LAST YEAR'],[recent,'CONTRIBUTIONS · LAST 30 DAYS'],[active,'ACTIVE DAYS · LAST YEAR'],[best,'MOST CONTRIBUTIONS IN A DAY']];
               const cardColors=dark?['#79c0ff','#d2a8ff','#56d4a3','#ffbd69']:['#0969da','#8250df','#16865b','#bc5900'];
@@ -68,7 +68,7 @@ jobs:
               svg+=`<text x="16" y="289" fill="${muted}" font-size="10">Last 12 months · Updated ${new Date().toISOString().slice(0,10)} UTC</text><text x="715" y="289" fill="${muted}" font-size="10">Less</text>`;
               colors.forEach((color,i)=>svg+=`<rect x="${746+i*16}" y="279" width="12" height="12" rx="3" fill="${color}"/>`);
               svg+=`<text x="834" y="289" fill="${muted}" font-size="10">More</text></g></svg>`;
-              fs.writeFileSync(`dist/contributions${dark?'-dark':''}.svg`,svg);
+              fs.writeFileSync(`dist/contributions-colorful${dark?'-dark':''}.svg`,svg);
               {
               const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
               const cc=result.user.contributionsCollection;
