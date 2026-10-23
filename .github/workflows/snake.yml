@@ -24,6 +24,9 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#4c9aff&color_dots=#ebedf0,#c6e48b,#7bc96f,#239a3b,#196127
             dist/github-contribution-grid-snake-dark.svg?color_snake=#8b949e&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
+      - name: Allow calendar assets in generated directory
+        run: sudo chown -R "$(id -u):$(id -g)" dist
+
       - name: Generate contribution calendar
         uses: actions/github-script@v7
         with:
