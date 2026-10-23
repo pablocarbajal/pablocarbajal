@@ -24,6 +24,38 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#4c9aff&color_dots=#ebedf0,#c6e48b,#7bc96f,#239a3b,#196127
             dist/github-contribution-grid-snake-dark.svg?color_snake=#8b949e&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
+      - name: Generate contribution calendar
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = await github.graphql(`query($login: String!) { user(login: $login) { contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { contributionCount date weekday } } } } } }`, { login: context.repo.owner });
+            const calendar = result.user.contributionsCollection.contributionCalendar;
+            const fs = require('fs');
+            fs.mkdirSync('dist', { recursive: true });
+            for (const dark of [true, false]) {
+              const bg = dark ? '#0d1117' : '#ffffff';
+              const fg = dark ? '#c9d1d9' : '#24292f';
+              const muted = dark ? '#8b949e' : '#57606a';
+              const colors = dark ? ['#161b22', '#214568', '#4763b5', '#8b6cdb', '#49c9b0'] : ['#ebedf0', '#bed8ef', '#8ba7e0', '#ae8be2', '#279d89'];
+              const peak = Math.max(1, ...calendar.weeks.flatMap(w => w.contributionDays.map(d => d.contributionCount)));
+              const width = 920;
+              let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="220" viewBox="0 0 ${width} 220" role="img" aria-label="GitHub contribution calendar"><rect width="100%" height="100%" fill="${bg}"/><g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif"><text x="20" y="28" fill="${fg}" font-size="16" font-weight="600">${calendar.totalContributions.toLocaleString('en-US')} contributions in the last year</text>`;
+              let lastMonth = '';
+              calendar.weeks.forEach((week, i) => {
+                const month = new Date(week.contributionDays[0].date + 'T00:00:00Z').toLocaleString('en-US', {month:'short', timeZone:'UTC'});
+                if (month !== lastMonth && i < calendar.weeks.length - 1) { svg += `<text x="${50 + i * 16}" y="54" fill="${muted}" font-size="10">${month}</text>`; lastMonth = month; }
+                week.contributionDays.forEach(d => {
+                  const level = d.contributionCount === 0 ? 0 : Math.min(4, Math.max(1, Math.ceil(4 * Math.sqrt(d.contributionCount / peak))));
+                  svg += `<rect x="${50+i*16}" y="${66+d.weekday*16}" width="12" height="12" rx="3" fill="${colors[level]}"><title>${d.date}: ${d.contributionCount} contributions</title></rect>`;
+                });
+              });
+              for (const [label, day] of [['Mon',1],['Wed',3],['Fri',5]]) svg += `<text x="16" y="${75+day*16}" fill="${muted}" font-size="10">${label}</text>`;
+              svg += `<text x="715" y="204" fill="${muted}" font-size="10">Less</text>`;
+              colors.forEach((color,i) => svg += `<rect x="${746+i*16}" y="194" width="12" height="12" rx="3" fill="${color}"/>`);
+              svg += `<text x="834" y="204" fill="${muted}" font-size="10">More</text></g></svg>`;
+              fs.writeFileSync(`dist/contributions${dark ? '-dark' : ''}.svg`, svg);
+            }
+
       - name: Publish animation to the output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
