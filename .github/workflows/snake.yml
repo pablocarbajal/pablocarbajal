@@ -94,7 +94,7 @@ jobs:
               const circumference=2*Math.PI*61;
               city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${border}" stroke-width="23"/>`;
               let offset=0;
-              languages.forEach((l,i)=>{const pct=l.size/sum,len=pct*circumference;city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${l.color}" stroke-width="23" stroke-dasharray="${len} ${circumference-len}" stroke-dashoffset="${-offset}" transform="rotate(-90 104 435)"/><rect x="195" y="${388+i*25}" width="10" height="10" rx="2" fill="${l.color}"/><text x="215" y="${398+i*25}" fill="${fg}" font-size="11">${esc(l.name)} · ${(pct*100).toFixed(1)}%</text>`;offset+=len;});
+              languages.forEach((l,i)=>{const pct=l.size/sum,len=pct*circumference;city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${l.color}" stroke-width="23" stroke-dasharray="${len} ${circumference-len}" stroke-dashoffset="${-offset}" transform="rotate(-90 104 435)"/><rect x="195" y="${378+i*25}" width="10" height="10" rx="2" fill="${l.color}"/><text x="215" y="${388+i*25}" fill="${fg}" font-size="11">${esc(l.name)} · ${(pct*100).toFixed(1)}%</text>`;offset+=len;});
               city+=`<text x="24" y="528" fill="${muted}" font-size="10">Languages: owned repositories, including private; excludes forks. Snapshot ${languageSnapshot.measuredAt}.</text><text x="24" y="549" fill="${muted}" font-size="10">Block color follows the time of year; height follows actual daily activity on a logarithmic scale.</text><text x="24" y="572" fill="${muted}" font-size="10">Updated ${new Date().toISOString().slice(0,10)} UTC · Refreshes every 6 hours</text></g></svg>`;
               fs.writeFileSync(`dist/contributions-3d-${dark?'dark':'light'}.svg`,city);
               }
