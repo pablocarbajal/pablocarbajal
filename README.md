@@ -1,38 +1,29 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100%" alt="Animated development workspace with connected devices" />
+  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100%" alt="Animated development workspace connecting code, devices and creative tools" />
 </p>
-<h1 align="center">
-  Hi, I'm Pablo Carbajal! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" alt="Waving hand" />
-</h1>
-<br/>
 
-<!-- Typing SVG by DenverCoder1 - https://github.com/DenverCoder1/readme-typing-svg -->
+<h1 align="center">Pablo Carbajal</h1>
+<p align="center"><strong>Information Systems Engineering student · Software builder · Tutor</strong></p>
+<p align="center">Building web applications, desktop software and algorithm-driven tools.<br/>Combining competitive mathematics with hands-on development in C++, Python and the web ecosystem.</p>
+
 <p align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?lines=Math+%2F+Programming+%2F+Piano+Tutor&center=true&width=620&height=45" alt="Math, programming and piano tutor" />
-  </a>
+  <a href="#%EF%B8%8F-technologies--knowledge">Technologies</a> ·
+  <a href="#contribution-landscape">Development overview</a> ·
+  <a href="#contributions">Contributions</a>
 </p>
 
 <table>
 <tr>
-<td width="320" valign="top"><img src="https://github.com/I-am-vishalmaurya/I-am-vishalmaurya/blob/main/cropped_image.png?raw=true" alt="Developer illustration" width="300" /></td>
-<td valign="top">
-<h3>💻 About Me</h3>
-<ul>
-<li>🎓 <strong>Information Systems Engineering</strong> student.</li>
-<li>👨‍🏫 Private tutor in <strong>mathematics, programming and piano</strong>.</li>
-<li>🧠 Strong foundation in <strong>competitive mathematics</strong> and algorithms.</li>
-<li>🛠️ I build personal projects in <strong>C++ and Python</strong>: console games, language interpreters and algorithm visualizers.</li>
-<li>🌐 Currently exploring <strong>web development</strong> with modern frameworks.</li>
-<li>🚀 I enjoy teaching, learning continuously and turning difficult ideas into useful software.</li>
-</ul>
-</td>
+<td width="33%" valign="top"><strong>Web & applications</strong><br/><br/>Developing with modern web frameworks, REST APIs and desktop interfaces.</td>
+<td width="33%" valign="top"><strong>Algorithms & problem solving</strong><br/><br/>Building console games, language interpreters and algorithm visualizers in C++ and Python.</td>
+<td width="33%" valign="top"><strong>Teaching & continuous learning</strong><br/><br/>Private tutor in mathematics, programming and piano. Turning difficult ideas into clear, useful solutions.</td>
 </tr>
 </table>
-
 ## 🛠️ Technologies & Knowledge
 
-### 💻 Languages
+My toolkit across application development, algorithms and data. Detailed foundations are available below.
+
+### Programming languages
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/cpp.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/cpp.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/cpp.svg" width="52" height="52" alt="C++" title="C++" /></picture>
@@ -43,7 +34,9 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/js.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/js.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/js.svg" width="52" height="52" alt="JavaScript" title="JavaScript" /></picture>
 </p>
 
-### 🌐 Web Development & Frameworks
+<sub>C++ · C# · Python · Java · TypeScript · JavaScript</sub>
+
+### Web, backend & desktop
 
 <p>
   <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/dotnet.svg" width="52" height="52" alt=".NET" title=".NET" />
@@ -58,7 +51,9 @@
   <img src="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/main/assets/icons/pwa.svg" width="52" height="52" alt="PWA" title="PWA" />
 </p>
 
-### 🗄️ Data & Machine Learning
+<sub>.NET · Windows Forms · Angular · React · Astro · Spring Boot · Flask · HTML · CSS · PWA</sub>
+
+### Data & machine learning
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/postgresql.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/postgresql.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/postgresql.svg" width="52" height="52" alt="PostgreSQL" title="PostgreSQL" /></picture>
@@ -67,7 +62,9 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/scikit-learn.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/scikit-learn.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/scikit-learn.svg" width="52" height="52" alt="Scikit-learn" title="Scikit-learn" /></picture>
 </p>
 
-### 🤖 AI as a Work Tool
+<sub>PostgreSQL · pandas · TensorFlow · scikit-learn</sub>
+
+### AI-assisted development
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/claude.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/claude.svg" width="52" height="52" alt="Claude" title="Claude" /></picture>
@@ -75,7 +72,9 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/copilot.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/copilot.svg" width="52" height="52" alt="GitHub Copilot" title="GitHub Copilot" /></picture>
 </p>
 
-### 🧰 Tools & Environment
+<sub>Claude · OpenAI Codex · GitHub Copilot</sub>
+
+### Tools & delivery
 
 <p>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/git.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/git.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/git.svg" width="52" height="52" alt="Git" title="Git" /></picture>
@@ -85,6 +84,8 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/vscode.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/vscode.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/vscode.svg" width="52" height="52" alt="Visual Studio Code" title="Visual Studio Code" /></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/intellij.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/light/intellij.svg" /><img src="https://raw.githubusercontent.com/YuheshPandian/ICONIC/bc5a0110a7bd8839e145b85f664eeda7b961ccb0/icons/dark/intellij.svg" width="52" height="52" alt="IntelliJ IDEA" title="IntelliJ IDEA" /></picture>
 </p>
+
+<sub>Git · GitHub · Docker · AWS · Visual Studio Code · IntelliJ IDEA</sub>
 
 <details>
 <summary><strong>Foundations & Architecture</strong></summary>
@@ -103,6 +104,8 @@
 
 ## Contribution landscape
 
+A view of my development activity and language distribution across public and private repositories.
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pablocarbajal/pablocarbajal/raw/refs/heads/output/contributions-3d-dark.svg" />
@@ -113,6 +116,8 @@
 
 
 ## Contributions
+
+Recent activity, followed by a space-shooter visualization generated from the same contribution history.
 
 <p align="center">
   <a href="https://github.com/pablocarbajal?tab=overview#year-list-container">
@@ -131,9 +136,19 @@
 </p>
 
 
+<details>
+<summary><strong>About these statistics</strong></summary>
+
+- **Contributions and activity:** refreshed automatically every six hours. GitHub determines which contributions are counted; radar values depend on what the workflow can access.
+- **Languages:** an aggregate measurement of 35 owned repositories, including 34 private repositories and excluding forks, taken on **October 23, 2026**. This measurement covers 21 detected languages. Private repository names and source code are not published.
+- **Language percentages describe code volume, not proficiency.** This snapshot is separate from the automatic contribution refresh.
+- **3D landscape:** each block represents a day. Height uses a logarithmic scale of real contributions; colors follow the time of year.
+
+</details>
+
 ---
 
-<p align="center">Thanks for visiting my profile 🙌</p>
+<p align="center"><strong>Building, learning and sharing knowledge.</strong><br/><sub>Thanks for visiting.</sub></p>
 
 
-<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
+<sub>Visuals: [Cool GIFs](https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub) · [ICONIC](https://github.com/YuheshPandian/ICONIC) · [Devicon](https://github.com/devicons/devicon) · [Space Shooter](https://github.com/czl9707/gh-space-shooter)</sub>
