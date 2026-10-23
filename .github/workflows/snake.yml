@@ -92,14 +92,14 @@ jobs:
                 if(h)city+=`<polygon points="${x},${y-h} ${x+12},${y+6-h} ${x+12},${y+6} ${x},${y}" fill="${left}"/><polygon points="${x+12},${y+6-h} ${x+26},${y-2-h} ${x+26},${y-2} ${x+12},${y+6}" fill="${right}"/>`;
                 city+=`<polygon points="${x},${y-h} ${x+14},${y-8-h} ${x+26},${y-2-h} ${x+12},${y+6-h}" fill="${top}" stroke="${bg}" stroke-width="0.6"><title>${d.date}: ${d.contributionCount} contributions</title></polygon>`;
               }));
-              city+=`<text x="685" y="84" fill="${fg}" font-size="14" font-weight="600">Activity profile</text>`;
+              city+=`<text x="665" y="76" fill="${fg}" font-size="14" font-weight="600">Activity profile</text>`;
               const metrics=[['Commits',cc.totalCommitContributions],['Issues',cc.totalIssueContributions],['Pull requests',cc.totalPullRequestContributions],['Reviews',cc.totalPullRequestReviewContributions],['Repos',cc.totalRepositoryContributions]];
               const cx=752,cy=196,radius=79;
               const point=(i,r)=>[cx+Math.cos(-Math.PI/2+i*2*Math.PI/5)*r,cy+Math.sin(-Math.PI/2+i*2*Math.PI/5)*r];
               for(let ring=1;ring<=4;ring++)city+=`<polygon points="${metrics.map((_,i)=>point(i,radius*ring/4).join(',')).join(' ')}" fill="none" stroke="${border}" stroke-dasharray="3 4"/>`;
               metrics.forEach(([label,value],i)=>{const p=point(i,radius),t=point(i,radius+28);city+=`<line x1="${cx}" y1="${cy}" x2="${p[0]}" y2="${p[1]}" stroke="${border}"/><text x="${t[0]}" y="${t[1]}" text-anchor="middle" fill="${fg}" font-size="10">${label}<tspan x="${t[0]}" dy="14" fill="${muted}">${value}</tspan></text>`;});
               const maxMetric=Math.max(1,...metrics.map(m=>m[1]));
-              city+=`<polygon points="${metrics.map((m,i)=>point(i,radius*Math.log1p(m[1])/Math.log1p(maxMetric)).join(',')).join(' ')}" fill="#56d364" fill-opacity="0.35" stroke="#7ee787" stroke-width="2"/><text x="650" y="322" fill="${muted}" font-size="9">Last year · logarithmic axes</text>`;
+              city+=`<polygon points="${metrics.map((m,i)=>point(i,radius*Math.log1p(m[1])/Math.log1p(maxMetric)).join(',')).join(' ')}" fill="#56d364" fill-opacity="0.35" stroke="#7ee787" stroke-width="2"/><text x="650" y="486" fill="${muted}" font-size="9">Last year · logarithmic axes</text>`;
               city+=`<text x="24" y="350" fill="${fg}" font-size="14" font-weight="600">Languages</text>`;
               const circumference=2*Math.PI*61;
               city+=`<circle cx="104" cy="435" r="61" fill="none" stroke="${border}" stroke-width="23"/>`;
